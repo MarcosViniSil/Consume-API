@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+           font-size: 1.9rem;
+           text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 60px;">
+        <label for="cep">Digite seu cep</label>
+        <input id="cep" type="number">
+    </div>
+    <button onclick="getPs()">Consultar</button>
+    <div>
+        <p id="address"></p>
+        <p id="city"></p>
+        <p id="code"></p>
+        <p id="district"></p>
+        <p id="state"></p>
+    </div>
+</body>
+<script src="api.js"></script>
+</html>
